@@ -1,4 +1,4 @@
-from .config import HF_REPO_ID, BASE_MODEL, MAX_LENGTH, DEVICE, BATCH_SIZE
+from config import HF_REPO_ID, BASE_MODEL, MAX_LENGTH, DEVICE, BATCH_SIZE
 from transformers import DebertaV2Tokenizer, AutoModel
 from huggingface_hub import hf_hub_download
 import torch.nn as nn

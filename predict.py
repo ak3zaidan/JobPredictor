@@ -1,15 +1,8 @@
-import sys
-from pathlib import Path
-
-# Add project root so 'model' is importable as a package
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
-
-from model.model import load_predictor, predict_all
+from model import load_predictor, predict_all
 import pandas as pd
 
 def main():
-    path = Path(__file__).parent / "test.parquet"
-    df = pd.read_parquet(path)
+    df = pd.read_parquet("test.parquet")
 
     # Sample 50 random rows
     sample = df.sample(n=50, random_state=42)

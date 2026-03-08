@@ -15,6 +15,8 @@ A fine-tuned **DeBERTa-v3-base** model that predicts **expected years of experie
 
 The test set was **not used during training** — it serves purely as a benchmark.
 
+<img width="903" height="730" alt="Screenshot 2026-03-07 at 5 50 26 PM" src="https://github.com/user-attachments/assets/bdac5d7f-c149-4854-839a-a8ce86a4ec26" />
+
 ## Quick Start
 
 ### Install
@@ -77,6 +79,10 @@ Both are **open source** and available on Hugging Face.
 | Optimizer | AdamW (weight decay 0.05) |
 | Loss | MSE (experience + salary) |
 
+<img width="1468" height="392" alt="Screenshot 2026-03-06 at 3 29 18 PM" src="https://github.com/user-attachments/assets/3b38579a-b77a-4a79-ab7b-91598830e0d8" />
+
+<img width="315" height="274" alt="Screenshot 2026-03-07 at 5 28 55 PM" src="https://github.com/user-attachments/assets/80c9bf66-867e-422a-8ab5-584120b3cda7" />
+
 ## Architecture
 
 - **Encoder**: DeBERTa-v3-base (12 layers, 768 hidden, 184M params)
@@ -124,3 +130,9 @@ This loads the model from Hugging Face and runs inference on a sample of rows.
 ## License
 
 Dataset and model are available under permissive licenses. See the respective Hugging Face pages for details.
+
+## Data Distribution
+
+<img width="316" height="632" alt="Screenshot 2026-03-04 at 12 53 54 PM" src="https://github.com/user-attachments/assets/553d16ff-7339-47d2-b22f-a5fd649354d3" />
+<img width="229" height="360" alt="Screenshot 2026-03-04 at 12 53 43 PM" src="https://github.com/user-attachments/assets/9fef6815-174b-48fe-9988-d3dff46de208" />
+

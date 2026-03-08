@@ -1,6 +1,6 @@
 # Job Predictor — Experience & Salary Classification
 
-A fine-tuned **DeBERTa-v3-base** model that predicts **expected years of experience** and **expected annual salary (USD)** from job posting text. Trained on ~750k real LinkedIn job postings. Runs on CPU (tested on my Macbook air) and can batch predict 1000/m.
+A fine-tuned **DeBERTa-v3-base** model that predicts **expected years of experience** and **expected annual salary (USD)** from job posting text. Trained on ~750k real LinkedIn job postings. Runs quick on CPU (tested on my Macbook air).
 
 [![Hugging Face Model](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Model-blue)](https://huggingface.co/akzaidan/JobPredictor2)
 [![Hugging Face Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-orange)](https://huggingface.co/datasets/akzaidan/Job_Data_Parser)

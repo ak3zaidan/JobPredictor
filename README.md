@@ -1,6 +1,6 @@
 # Job Predictor — Experience & Salary Classification
 
-A fine-tuned **DeBERTa-v3-base** model that predicts **expected years of experience** and **expected annual salary (USD)** from job posting text. Trained on ~750k real LinkedIn job postings.
+A fine-tuned **DeBERTa-v3-base** model that predicts **expected years of experience** and **expected annual salary (USD)** from job posting text. Trained on ~750k real LinkedIn job postings. Runs on CPU (tested on my Macbook air) and can batch predict 1000/m.
 
 [![Hugging Face Model](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Model-blue)](https://huggingface.co/akzaidan/JobPredictor2)
 [![Hugging Face Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-orange)](https://huggingface.co/datasets/akzaidan/Job_Data_Parser)
@@ -130,6 +130,14 @@ This loads the model from Hugging Face and runs inference on a sample of rows.
 ## License
 
 Dataset and model are available under permissive licenses. See the respective Hugging Face pages for details.
+
+## Training Notes
+
+- GoogleDeepmind RegressLM was probably a better approach
+- Model was overfitting until I increased dropout and lowered learning rate
+- I generated all datasets by using Grok 4.1/GPT 4o for classification (Costed $80).
+- Grok/GPT are good for this task but are expensive/slow since I process 400k Jobs per day.
+- I used Runpod for training (Pytorch 2.8>= was a must)
 
 ## Data Distribution
 
